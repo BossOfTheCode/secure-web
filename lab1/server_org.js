@@ -3,6 +3,8 @@ const fs = require('fs');
 const url = require('url');
 const pathutil = require("path");
 
+let users = null;
+
 const hostname = '127.0.0.1';
 const port = 8080;
 
@@ -40,7 +42,7 @@ const server = http.createServer((rq, rs) => {
 		let login = data.name;//Имя пользователя со страницы логина
 		//прочитаем файл с паролями с диска и найдём в нём нашего пользователя
 		try {
-			let users = fs.readFileSync('./user.txt', 'utf8');
+			users = fs.readFileSync('./users.txt', 'utf8');
 			console.log(users);
 		}
 		catch (e) {
@@ -72,7 +74,6 @@ const server = http.createServer((rq, rs) => {
 			rs.end('user does not exists');
 			return; //Выходим с ошибкой
 		}
-
 		if(data.pass === password_to_check)//Нашли пользователя, проверим пароль
 		{
 			rs.writeHead(200);
