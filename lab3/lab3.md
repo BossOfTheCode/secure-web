@@ -76,6 +76,9 @@ Cookie Injection:
 
 Теперь данные уязвимости больше нельзя эксплуатировать:
 
-![image](https://user-images.githubusercontent.com/79054264/145852448-fca8663c-f9b6-4477-a169-70e94398c595.png)
-![image](https://user-images.githubusercontent.com/79054264/145852948-369d1b3d-8b2b-4d48-9e4d-e0bb6d978a5b.png)
+XSS
+>![image](https://user-images.githubusercontent.com/79054264/145852448-fca8663c-f9b6-4477-a169-70e94398c595.png)
+
+Cookie Injection
+>![image](https://user-images.githubusercontent.com/79054264/145852948-369d1b3d-8b2b-4d48-9e4d-e0bb6d978a5b.png)
 
